@@ -1,0 +1,32 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'zinebboussihi@gmail.com'
+  smtp_auth_username: 'zinebboussihi@gmail.com'
+  smtp_auth_identity: 'zinebboussihi@gmail.com'
+  smtp_auth_password: 'skioreegrmzbgpbl'
+  smtp_require_tls: true
+
+route:
+  receiver: 'email_notifications'
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 1h
+
+receivers:
+  - name: 'email_notifications'
+    email_configs:
+      - to: 'zinebboussihi@gmail.com'
+        send_resolved: true'
+  smtp_require_tls: true
+
+route:
+  receiver: 'email_notifications'
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 1h
+
+receivers:
+  - name: 'email_notifications'
+    email_configs:
+      - to: 'zinebboussihi@gmail.com'
+        send_resolved: true
