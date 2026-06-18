@@ -44,7 +44,7 @@ Déclenchée lorsque l'utilisation du processeur dépasse le seuil défini.
 
 Déclenchée lorsque l'utilisation du disque dépasse le seuil critique.
 
-![High Disk Usage Alert](images/high_disk_alert.png)
+![High Disk Usage Alert](images/High_disk_alert.png)
 
 ### Gestion des alertes avec Alertmanager
 
